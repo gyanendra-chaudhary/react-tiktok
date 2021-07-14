@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Video.css";
 
+import VideoFooter from "./VideoFooter";
+
 function Video() {
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef(null);
+  const onVideoPress = () => {
+    if (playing) {
+      videoRef.current.pause();
+      setPlaying(false);
+    } else {
+      videoRef.current.play();
+      setPlaying(true);
+    }
+  };
   return (
     <div className="video">
       <video
         className="video__player"
         loop
-        src="https://v16m.tiktokcdn.com/21d1e41c76c8b9551b71852e2ceeb2d2/60ede9f6/video/tos/useast2a/tos-useast2a-pve-0068/0dfc6826f41c42e48223c1de658b7b8a/?a=1180&br=3710&bt=1855&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=3&ds=3&er=&l=2021071313304801011515315500028657&lr=tiktok&mime_type=video_mp4&net=0&pl=0&qs=0&rc=ajVtZ3FmdzxkNjMzNzczM0ApaDk4O2c1OGRnN2U5NmdoZGdlX2FobTZobWVgLS1kMTZzc19iYmJgYzM1Y19jLjEzYjY6Yw%3D%3D&vl=&vr="
+        onClick={onVideoPress}
+        ref={videoRef}
+        src="https://v16m.tiktokcdn.com/0056099599aa16f46f27c487607e890e/60ef3b94/video/tos/alisg/tos-alisg-pve-0037/f484250dc2b847248b5e985f16ea27a9/?a=1180&br=3216&bt=1608&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=3&ds=3&er=&l=202107141331220102451442002F2ACA6B&lr=tiktok&mime_type=video_mp4&net=0&pl=0&qs=0&rc=anBweGo7ZXhsNjMzODgzNEApN2Q7OjQ8Zzs3N2U3OmRnNGdsY3BvcnI0bDJgLS1kLy1zcy9iYjAvNjA1NTBeM2IzMTU6Yw%3D%3D&vl=&vr="
       ></video>
+      <VideoFooter />
       {/* Video Footer */}
       {/* Video Sidebar */}
     </div>
