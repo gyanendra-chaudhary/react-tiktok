@@ -2,7 +2,7 @@
   position: relative;
   color: white;
   bottom: 150px;
-  margin-left:40px;
+  margin-left: 40px;
   display: flex;
 }
 .videoFooter__text {
@@ -15,26 +15,24 @@
   border-radius: 50%;
   position: absolute;
   bottom: 0;
-  right:0;
+  right: 20px;
 }
-.videoFooter__text > h3{
-  padding-bottom: 20px;
-
+.videoFooter__text > h3 {
+  padding: 20px 0px;
 }
-.videoFooter_text > p{
-  padding-bottom: 20px;
-
+.videoFooter__text > p {
+  padding-bottom: 15px;
 }
-.videoFooter__icon{
-  position:absolute;
+.videoFooter__icon {
+  position: absolute;
 }
-.videoFooter__ticker{
-  display:flex;
+.videoFooter__ticker {
+  display: flex;
 }
-.videoFooter__ticker > .ticker{
+.videoFooter__ticker > .ticker {
   height: fit-content;
-  margin-left:30px;
-  width:60%;
+  margin-left: 30px;
+  width: 6 0%;
 }
 
 @keyframes spinTheRecord {
