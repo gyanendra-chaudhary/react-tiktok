@@ -4,7 +4,7 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCZAOrCk0i_fLf3RMO7ENlKR8atlV8b1Og",
+
   authDomain: "tik-tok-5f332.firebaseapp.com",
   projectId: "tik-tok-5f332",
   storageBucket: "tik-tok-5f332.appspot.com",
