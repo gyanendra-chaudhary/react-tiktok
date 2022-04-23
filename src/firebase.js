@@ -5,12 +5,12 @@ import firebase from "firebase";
 
 const firebaseConfig = {
 
-  authDomain: "tik-tok-5f332.firebaseapp.com",
-  projectId: "tik-tok-5f332",
-  storageBucket: "tik-tok-5f332.appspot.com",
-  messagingSenderId: "149729838655",
-  appId: "1:149729838655:web:449df1c8c3ddcf79e31a8a",
-  measurementId: "G-9SFF7DYS55",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: "",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
